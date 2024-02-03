@@ -3,6 +3,7 @@ project:
     name: OEE-ExtendedDirectory
     package:
         name: OEE-ExtendedDirectory
+        namespace: csuoee
         api_version: '59.0'
     dependencies:
         - github: 'https://github.com/OEE-Application-Development/OEE-EDA-Base-Unlocked'
