@@ -1,12 +1,19 @@
 {
   "orgName": "OEE-ExtendedDirectory - Dev Org",
-  "edition": "Developer",
+  "edition": "Enterprise",
+  "features": ["SharedActivities"],
   "settings": {
+    "accountSettings": {
+      "enableAccountHistoryTracking": true
+    },
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
     "chatterSettings": {
       "enableChatter": true
+    },
+    "emailAdministrationSettings": {
+      "enableEnhancedEmailEnabled": true
     },
     "userManagementSettings": {
       "enableNewProfileUI": true
@@ -19,6 +26,11 @@
     },
     "languageSettings": {
       "enableTranslationWorkbench": true
+    }
+  },
+  "objectSettings": {
+    "account": {
+      "defaultRecordType": "Administrative"
     }
   }
 }
