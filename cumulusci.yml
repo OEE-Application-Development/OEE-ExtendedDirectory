@@ -1,0 +1,27 @@
+minimum_cumulusci_version: '3.84.1'
+project:
+    name: OEE-ExtendedDirectory
+    package:
+        name: OEE-ExtendedDirectory
+        api_version: '59.0'
+    dependencies:
+        - github: 'https://github.com/OEE-Application-Development/OEE-EDA-Base-Unlocked'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/OEE-ExtendedDirectory/tests
+            options:
+                outputdir: robot/OEE-ExtendedDirectory/results
+
+    robot_testdoc:
+        options:
+            path: robot/OEE-ExtendedDirectory/tests
+            output: robot/OEE-ExtendedDirectory/doc/OEE-ExtendedDirectory_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
